@@ -52,3 +52,6 @@
              sudo mkdir /var/run/mysqld
              sudo mkfifo /var/run/mysqld/mysqld.sock
              sudo chown -R mysql /var/run/mysqld
+
+21.07.20.
+1) Получилось выводить отмеченные продукты в боковую панель wishlist, но не факт, что правильно .
