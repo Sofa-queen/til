@@ -60,3 +60,12 @@
 1) Научилась перенаправлять пользователя на предыдущую страницу.
 2) Сделала плагин, который добавляет продукты из гостевого списка желаний в wishlist по customer_id, после того, как пользователь вошёл в систему.
 3) Узнала, что у каждого типа клиента есть предпочтительный метод аутентификации.
+
+23.07.20.
+1) Чтобы при git push не запрашивались пароль и имя пользователя, необходимо переключить удаленные URL-адреса с HTTPS на SSH:
+   git remote -v    
+                   origin  https://hostname/USERNAME/REPOSITORY.git (fetch)
+                   origin  https://hostname/USERNAME/REPOSITORY.git (push)
+
+   git remote set-url origin git@hostname:USERNAME/REPOSITORY.git
+2) Узнала, что такое cron в magento и для чего нужен .
