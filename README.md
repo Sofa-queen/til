@@ -69,3 +69,6 @@
 
    git remote set-url origin git@hostname:USERNAME/REPOSITORY.git
 2) Узнала, что такое cron в magento и для чего нужен .
+
+24.07.20.
+1) Записать массив в log файл : $this->logger->log(100,print_r($data,true));
