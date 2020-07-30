@@ -105,5 +105,19 @@
 
 3) Установила mhsendmail: 
    go get github.com/mailhog/mhsendmail
-   В php.ini:
+   В /etc/php/7.2/fpm/php.ini ( sudo service php7.2-fpm restart )  ,  /etc/php/7.2/cli/php.ini : 
    sendmail_path = /usr/local/bin/mhsendmail
+   
+   Проверка:
+   php -a
+   php > mail('test@test.com', 'test', 'test');
+
+   или 
+ 
+   mhsendmail test@mailhog.local <<EOF
+   From: App <app@mailhog.local>
+   To: Test <test@mailhog.local>
+   Subject: Test message
+
+   Some content!
+   EOF
