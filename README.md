@@ -103,4 +103,7 @@
    Или закрыть вкладку терминала с установкой, либо перезагрузить комп и выполнить : 
    sudo dpkg --configure -a 
 
-3) 
+3) Установила mhsendmail: 
+   go get github.com/mailhog/mhsendmail
+   В php.ini:
+   sendmail_path = /usr/local/bin/mhsendmail
