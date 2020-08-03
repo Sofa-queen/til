@@ -128,3 +128,11 @@ mysqldump -u имя_пользователя -p имя_базы_данных > �
 2) Чтобы сделать текст в magento переводимым на другие языки :
          <?= __('<your_string>') ?>
 https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translate_theory.html
+
+3.08.20.
+1) Решение проблемы nginx: [emerg] no port in upstream "fastcgi_backend" in /var/www/html/magento/nginx.conf.sample:52
+   в начало файла /etc/nginx/sites-available/magento добавить :
+           upstream fastcgi_backend {
+                       server   unix:/var/run/php7.3-fpm.sock;
+           }
+        
