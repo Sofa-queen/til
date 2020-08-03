@@ -149,3 +149,8 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
          GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
          FLUSH PRIVILEGES;
 3) Узнала, что 502 ошибка может возникнуть, если неправильно указать путь к php7.3-fpm.sock файлу ...((((
+4) При ошибки, возникающей при работе с .vimrc :
+      Неизвестная функция: plug#begin / Это не команда редактора: Plug 'dense-analysis/ale'
+   Выполнить команду :
+      curl -fLo ~/.vim/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+       
