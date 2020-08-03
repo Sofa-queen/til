@@ -131,8 +131,20 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
 
 3.08.20.
 1) Решение проблемы nginx: [emerg] no port in upstream "fastcgi_backend" in /var/www/html/magento/nginx.conf.sample:52
-   в начало файла /etc/nginx/sites-available/magento добавить :
+   в начало файла /
+   etc/nginx/sites-available/magento добавить :
            upstream fastcgi_backend {
                        server   unix:/var/run/php7.3-fpm.sock;
            }
         
+2) Решение проблемы ERROR 1045 (28000): Access denied for user 'root'@'localhost' :
+         sudo apt-get remove --purge mysql-server mysql-client mysql-common
+         sudo apt-get autoremove
+         sudo apt-get autoclean
+         sudo apt install mysql-server
+         
+         sudo mysql -u root
+         DROP USER 'root'@'localhost';
+         CREATE USER 'root'@'%' IDENTIFIED BY '';
+         GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+         FLUSH PRIVILEGES;
