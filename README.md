@@ -148,3 +148,4 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
          CREATE USER 'root'@'%' IDENTIFIED BY '';
          GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
          FLUSH PRIVILEGES;
+3) Узнала, что 502 ошибка может возникнуть, если неправильно указать путь к php7.3-fpm.sock файлу ...((((
