@@ -125,3 +125,6 @@
 31.07.20.
 1) Научилась делать дамп бд :
 mysqldump -u имя_пользователя -p имя_базы_данных > путь_и_имя_файла_дампа
+2) Чтобы сделать текст в magento переводимым на другие языки :
+         <?= __('<your_string>') ?>
+https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translate_theory.html
