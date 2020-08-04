@@ -159,3 +159,4 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
     https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 2) Вы можете проверить синтаксис файлов конфигурации Nginx, выполнив:
    nginx -t -c /etc/nginx/nginx.conf 
+3) При nginx: [emerg] bind() to [::]:80 failed (98: Address already in use) выполнить : sudo service apache2 stop
