@@ -154,6 +154,8 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
    Выполнить команду :
       curl -fLo ~/.vim/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
        
- 4.08.20.
- 1) Генерация нового ключа SSH и добавление его в ssh-agent 
+4.08.20.
+1) Генерация нового ключа SSH и добавление его в ssh-agent 
     https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+2) Вы можете проверить синтаксис файлов конфигурации Nginx, выполнив:
+   nginx -t -c /etc/nginx/nginx.conf 
