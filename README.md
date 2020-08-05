@@ -160,3 +160,9 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
 2) Вы можете проверить синтаксис файлов конфигурации Nginx, выполнив:
    nginx -t -c /etc/nginx/nginx.conf 
 3) При nginx: [emerg] bind() to [::]:80 failed (98: Address already in use) выполнить : sudo service apache2 stop
+
+5.08.20.
+1) Проблемы с установкой и удалением MySQL в Ubuntu.
+   Попробуйте выполнить чистку, а затем переустановите : 
+              sudo apt-get remove --purge mysql-\*
+              sudo apt-get install mysql-server mysql-client
