@@ -178,3 +178,5 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
 (дочерний класс не наследовал родительский метод, решение: ипользовать parent:: или писать construct только в дочернем классе).
 
 7.08.20.
+1) vendor/bin/phpcs --standard=Magento2 app/code/MyAwesomeExtension
+   vendor/bin/phpcbf --standard=Magento2 app/code/MyAwesomeExtension
