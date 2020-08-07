@@ -180,3 +180,8 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
 7.08.20.
 1) vendor/bin/phpcs --standard=Magento2 app/code/MyAwesomeExtension
    vendor/bin/phpcbf --standard=Magento2 app/code/MyAwesomeExtension
+2) Узнала, что в Magento 2 есть несколько методов защиты шаблона:
+   $block->escapeHtml()
+   $block->escapeQuote()
+   $block->escapeUrl()
+   $block->escapeXssInUrl()
