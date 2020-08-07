@@ -105,8 +105,9 @@
 
 3) Установила mhsendmail: 
    go get github.com/mailhog/mhsendmail
+   ln  ~/go/bin/mhsendmail /usr/local/bin/mhsendmail
    В /etc/php/7.2/fpm/php.ini ( sudo service php7.2-fpm restart )  ,  /etc/php/7.2/cli/php.ini : 
-   sendmail_path = /usr/local/bin/mhsendmail
+      sendmail_path = /usr/local/bin/mhsendmail
    
    Проверка:
    php -a
@@ -166,3 +167,14 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
    Попробуйте выполнить чистку, а затем переустановите : 
               sudo apt-get remove --purge mysql-\*
               sudo apt-get install mysql-server mysql-client
+              
+6.08.20.
+1) Узнала, что в mysql запросах можно использовать функцию datediff(), например :
+   select datediff(now(), updated_at), wishlist.* from wishlist WHERE datediff(now(), updated_at);
+2) Столкнулась с проблемой в magento из-за прав.. итог - при установке magento не забыть добавить своего пользователя в группу, дать необходимые права.
+   sudo adduser www-data yasha
+   sudo usermod -a -G www-data yasha
+3) Столкнулась с ошибкой : Call to a member function create() on null in . Она вызвана тем, что $this->wishlistFactory->create() возвращает null, т.к. родительский и дочерний классы имели разные методы __construct.
+(дочерний класс не наследовал родительский метод, решение: ипользовать parent:: или писать construct только в дочернем классе).
+
+7.08.20.
