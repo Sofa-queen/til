@@ -188,3 +188,10 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
 
 17.08.20.
 1) Узнала, что такое индексы в magento, для чего используются и как работают.
+
+18.08.20.
+1) vim для работы с двумя окнами:
+       :vsplit - чтобы расположить две панели рядом
+       Ctrl+w+команда - перемещение между окнами 
+       :e filename - чтобы открыть другой файл
+       :set scrollbind - включить прокрутку 
