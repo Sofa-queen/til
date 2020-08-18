@@ -135,7 +135,7 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
    в начало файла /
    etc/nginx/sites-available/magento добавить :
            upstream fastcgi_backend {
-                       server   unix:/var/run/php7.3-fpm.sock;
+                       server   unix:/var/run/php/php7.3-fpm.sock;
            }
         
 2) Решение проблемы ERROR 1045 (28000): Access denied for user 'root'@'localhost' :
@@ -185,3 +185,6 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
    $block->escapeQuote()
    $block->escapeUrl()
    $block->escapeXssInUrl()
+
+17.08.20.
+1) Узнала, что такое индексы в magento, для чего используются и как работают.
