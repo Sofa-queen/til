@@ -195,3 +195,6 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
        Ctrl+w+команда - перемещение между окнами 
        :e filename - чтобы открыть другой файл
        :set scrollbind - включить прокрутку 
+       
+21.08.20.
+1) Когда поднимаешь проект на локалке, не забывать изменить value в core_config_data на свой url.
