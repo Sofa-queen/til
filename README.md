@@ -201,3 +201,5 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
 
 16.09.20.
 1) ошибка Not a git repository (or any of the parent directories): .git    -    выполнить git init
+2) ошибка при composer install file_put_contents(/home/yash/.composer/auth.json): failed to open stream: Permission denied   -   выполнить  sudo chown -R $USER ~/.composer/
+3) ошибка при composer install Uncaught Error: Undefined class constant 'PRE_COMMAND_RUN' возникает из-за устаревшей версии composerhttps://github.com/magento/magento2/issues/27867
