@@ -198,3 +198,6 @@ https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translat
        
 21.08.20.
 1) Когда поднимаешь проект на локалке, не забывать изменить value в core_config_data на свой url.
+
+16.09.20.
+1) ошибка Not a git repository (or any of the parent directories): .git    -    выполнить git init
